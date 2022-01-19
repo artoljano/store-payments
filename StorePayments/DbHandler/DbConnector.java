@@ -1,4 +1,5 @@
 import java.sql.*;
+import java.io.*;
 
 
 public class DbConnector {
@@ -11,7 +12,7 @@ private static Connection con;
 		
 		try {
 			
-			Class.forName(IDatabase.DRIVER_NAME);
+			Class.forName(IDatabase.DRIVER_NAME).newInstance();
 			
 		}
 		catch(Exception e)
