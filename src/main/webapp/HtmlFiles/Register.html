@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="src/main/webapp/CssFiles/Register.css"/>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body>
+
+<form action="<%= request.getContextPath()%>/register" method="post">
+  <h2>Sign Up</h2>
+		<p>
+			<label for="FirstName" class="floatLabel">Emer</label>
+			<input id="FirstName" name="FirstName" type="text">
+		</p>
+		<p>
+			<label for="LastName" class="floatLabel">Mbiemer</label>
+			<input id="Email" name="Email" type="text">
+		</p>
+		<p>
+			<label for="Email" class="floatLabel">Email</label>
+			<input id="Email" name="Email" type="text">
+		</p>
+		<p>
+			<label for="Phone" class="floatLabel">Nr. i Celularit</label>
+			<input id="Phone" name="Phone" type="text">
+		</p>
+		<p>
+			<label for="Username" class="floatLabel">Username</label>
+			<input id="Username" name="Username" type="text">
+		</p>
+		<p>
+			<label for="Password" class="floatLabel">Password</label>
+			<input id="Password" name="Password" type="password">
+			<span>Enter a password longer than 8 characters</span>
+		</p>
+		<p>
+			<label for="confirm_password" class="floatLabel">Confirm Password</label>
+			<input id="confirm_password" name="confirm_password" type="password">
+			<span>Your passwords do not match</span>
+		</p>
+		<p>
+			<input type="submit" value="Regjistrohu" id="submit">
+		</p>
+	</form>
+
+</body>
+</html>
